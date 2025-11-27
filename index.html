@@ -4,55 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghadiza - Susu Kurma Homemade</title>
-    <meta name="description" content="Susu Kurma Homemade Ghadiza. Tanpa pengawet, tanpa pemanis buatan. Tersedia 5 varian rasa.">
-    
+    <meta name="description" content="Susu Kurma Homemade Ghadiza tanpa pengawet dan pemanis buatan dengan lima varian rasa favorit.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4A3B32">
+    <link rel="canonical" href="https://ghadiza.id/susu-kurma">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="Ghadiza - Susu Kurma Homemade">
+    <meta property="og:description" content="Susu kurma homemade segar tanpa pengawet, tersedia 5 varian rasa alami.">
+    <meta property="og:url" content="https://ghadiza.id/susu-kurma">
+    <meta property="og:site_name" content="Ghadiza">
+    <meta property="og:image" content="https://ghadiza.id/assets/product.png">
+    <meta property="og:image:alt" content="Botol susu kurma homemade Ghadiza">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="1024">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ghadiza - Susu Kurma Homemade">
+    <meta name="twitter:description" content="Susu kurma homemade segar tanpa pengawet, tersedia 5 varian rasa alami.">
+    <meta name="twitter:image" content="https://ghadiza.id/assets/product.png">
+    <meta name="twitter:site" content="@ghadiza_susukurma">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preload" href="assets/product.png" as="image" imagesrcset="assets/product.png 682w" imagesizes="(max-width: 768px) 85vw, 420px">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Ghadiza Susu Kurma Homemade",
+        "image": [
+            "https://ghadiza.id/assets/product.png"
+        ],
+        "description": "Susu kurma homemade tanpa pengawet maupun pemanis buatan dengan lima varian rasa favorit.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Ghadiza"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "IDR",
+            "price": "15000",
+            "availability": "https://schema.org/InStock",
+            "url": "https://ghadiza.id/susu-kurma"
+        }
+    }
+    </script>
+
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo">Ghadiza</a>
-            <nav class="nav">
-                <a href="#home">Home</a>
-                <a href="#variants">Varian</a>
-                <a href="#order" class="btn-nav">Pesan Sekarang</a>
+<body class="no-js">
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <header class="header" role="banner">
+        <div class="container header__inner">
+            <a href="#home" class="logo header__logo" aria-label="Beranda Ghadiza">Ghadiza</a>
+            <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="visually-hidden nav-toggle__label">Buka navigasi utama</span>
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <nav class="nav" id="primary-navigation" aria-label="Navigasi utama">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#variants">Varian</a></li>
+                    <li class="nav__item nav__item--cta"><a class="nav__link nav__link--cta" href="#order">Pesan Sekarang</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="container hero__grid">
+                <div class="hero__content" data-reveal>
                     <span class="badge">100% Homemade</span>
-                    <h1>Kebaikan Kurma dalam Setiap Tegukan</h1>
+                    <h1 id="hero-title">Kebaikan Kurma dalam Setiap Tegukan</h1>
                     <p>Nikmati kesegaran susu kurma asli tanpa pengawet dan pemanis buatan. Sehat, lezat, dan menyegarkan.</p>
-                    <div class="hero-buttons">
-                        <a href="#order" class="btn btn-primary">Pesan Sekarang <i class="fas fa-arrow-right"></i></a>
-                        <a href="#variants" class="btn btn-outline">Lihat Varian</a>
+                    <div class="hero__actions">
+                        <a href="#order" class="btn btn--primary">Pesan Sekarang <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#variants" class="btn btn--outline">Lihat Varian</a>
                     </div>
-                    <div class="benefits">
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i> Tanpa Pengawet
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i> Tanpa Pemanis Buatan
-                        </div>
-                    </div>
+                    <ul class="benefits-list" role="list">
+                        <li class="benefits-list__item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Tanpa Pengawet</span>
+                        </li>
+                        <li class="benefits-list__item">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span>Tanpa Pemanis Buatan</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="assets/product.png" alt="Ghadiza Susu Kurma" class="product-img">
-                        <div class="floating-card card-1">
+                <div class="hero__image" data-reveal>
+                    <div class="hero__image-wrapper">
+                        <img src="assets/product.png" width="682" height="1024" alt="Botol susu kurma homemade Ghadiza" class="hero__product-image" fetchpriority="high" decoding="async">
+                        <div class="floating-card" aria-hidden="true">
                             <i class="fas fa-star"></i>
                             <span>Best Seller</span>
                         </div>
@@ -62,83 +120,71 @@
         </section>
 
         <!-- Variants Section -->
-        <section id="variants" class="variants">
+        <section id="variants" class="variants" aria-labelledby="variants-title">
             <div class="container">
-                <div class="section-header">
-                    <h2>5 Varian Rasa Favorit</h2>
+                <div class="section-header" data-reveal>
+                    <h2 id="variants-title">5 Varian Rasa Favorit</h2>
                     <p>Pilih rasa kesukaanmu, semuanya dibuat dengan bahan alami berkualitas.</p>
                 </div>
-                
-                <div class="variants-grid">
-                    <!-- Original -->
-                    <div class="variant-card">
-                        <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                <ul class="variants__grid" role="list">
+                    <li class="variant-card" data-reveal>
+                        <div class="variant-card__icon" aria-hidden="true"><i class="fas fa-leaf"></i></div>
                         <h3>Original</h3>
                         <p>Rasa asli kurma yang manis dan creamy, favorit semua kalangan.</p>
-                    </div>
-                    
-                    <!-- Chia Seeds -->
-                    <div class="variant-card">
-                        <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                    </li>
+                    <li class="variant-card" data-reveal>
+                        <div class="variant-card__icon" aria-hidden="true"><i class="fas fa-seedling"></i></div>
                         <h3>Chia Seeds</h3>
                         <p>Tambahan superfood chia seeds untuk tekstur dan nutrisi ekstra.</p>
-                    </div>
-                    
-                    <!-- Jahe -->
-                    <div class="variant-card">
-                        <div class="card-icon"><i class="fas fa-mug-hot"></i></div>
+                    </li>
+                    <li class="variant-card" data-reveal>
+                        <div class="variant-card__icon" aria-hidden="true"><i class="fas fa-mug-hot"></i></div>
                         <h3>Jahe</h3>
                         <p>Hangatnya jahe berpadu dengan manisnya kurma, cocok untuk imunitas.</p>
-                    </div>
-                    
-                    <!-- Jelly -->
-                    <div class="variant-card">
-                        <div class="card-icon"><i class="fas fa-cube"></i></div>
+                    </li>
+                    <li class="variant-card" data-reveal>
+                        <div class="variant-card__icon" aria-hidden="true"><i class="fas fa-cube"></i></div>
                         <h3>Jelly</h3>
                         <p>Sensasi kenyal jelly yang bikin minum susu kurma makin asik.</p>
-                    </div>
-                    
-                    <!-- Cincau -->
-                    <div class="variant-card">
-                        <div class="card-icon"><i class="fas fa-cloud"></i></div>
+                    </li>
+                    <li class="variant-card" data-reveal>
+                        <div class="variant-card__icon" aria-hidden="true"><i class="fas fa-cloud"></i></div>
                         <h3>Cincau</h3>
                         <p>Kesegaran cincau hitam yang adem, pas banget diminum dingin.</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- Order Section -->
-        <section id="order" class="order">
+        <section id="order" class="order" aria-labelledby="order-title">
             <div class="container">
-                <div class="order-wrapper">
-                    <div class="order-content">
-                        <h2>Siap untuk Menikmati?</h2>
-                        <p class="price">Hanya <span>IDR 15,000</span> / botol</p>
-                        
-                        <div class="delivery-info">
-                            <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
+                <div class="order__panel" data-reveal>
+                    <div class="order__content">
+                        <h2 id="order-title">Siap untuk Menikmati?</h2>
+                        <p class="order__price">Hanya <span class="order__price-amount">IDR 15,000</span> / botol</p>
+                        <ul class="delivery-list" role="list">
+                            <li class="delivery-list__item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 <div>
                                     <strong>Lokasi Pengiriman</strong>
                                     <p>Cinangka, Sawangan, Depok</p>
                                 </div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-truck"></i>
+                            </li>
+                            <li class="delivery-list__item">
+                                <i class="fas fa-truck" aria-hidden="true"></i>
                                 <div>
                                     <strong>Pengiriman Via</strong>
-                                    <p>Gojek & Paxel</p>
+                                    <p>Gojek &amp; Paxel</p>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="cta-buttons">
-                            <a href="https://wa.me/6287870009090?text=Halo%20Ghadiza,%20saya%20mau%20pesan%20susu%20kurma" target="_blank" class="btn btn-whatsapp">
-                                <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                            </li>
+                        </ul>
+                        <div class="order__actions">
+                            <a href="https://wa.me/6287870009090?text=Halo%20Ghadiza,%20saya%20mau%20pesan%20susu%20kurma" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" aria-label="Pesan susu kurma via WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> Pesan via WhatsApp
                             </a>
-                            <a href="https://gofood.co.id/jakarta/restaurant/dapur-amieh-ghazi-sawangan-ded21ee8-d661-46ef-9b41-0639fea538b5" target="_blank" class="btn btn-gofood">
-                                <i class="fas fa-utensils"></i> Pesan di GoFood
+                            <a href="https://gofood.co.id/jakarta/restaurant/dapur-amieh-ghazi-sawangan-ded21ee8-d661-46ef-9b41-0639fea538b5" target="_blank" rel="noopener noreferrer" class="btn btn--gofood" aria-label="Pesan susu kurma di GoFood">
+                                <i class="fas fa-utensils" aria-hidden="true"></i> Pesan di GoFood
                             </a>
                         </div>
                     </div>
@@ -149,21 +195,21 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
+            <div class="footer__content" data-reveal>
+                <div class="footer__brand">
                     <h3>Ghadiza</h3>
                     <p>Susu Kurma Homemade</p>
                 </div>
-                <div class="footer-links">
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> @ghadiza_susukurma</a>
+                <div class="footer__links">
+                    <a href="https://instagram.com/ghadiza_susukurma" target="_blank" rel="noopener noreferrer" aria-label="Instagram Ghadiza Susu Kurma">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> @ghadiza_susukurma
+                    </a>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer__bottom">
                 <p>&copy; 2025 Ghadiza Susu Kurma. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
